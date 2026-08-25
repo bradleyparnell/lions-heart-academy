@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Homepage design concept for Lion's Heart Academy in León, Guanajuato.">
+<meta name="theme-color" content="#0b3529">
 <title>Lion’s Heart Academy — Homepage Concept</title>
 <style>
 :root{
@@ -17,6 +18,38 @@
 
 /* Final concept polish */
 :focus-visible{outline:3px solid #fff;outline-offset:4px}.links a{position:relative}.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:#fff;transition:.25s}.links a:hover:after{right:0}.form label{display:block;margin-bottom:14px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--green)}.form input,.form select{display:block;width:100%;margin-top:6px;padding:12px 0;border:0;border-bottom:1px solid #aeb5af;background:transparent;border-radius:0;font:400 .94rem var(--sans);color:var(--ink);outline:none}.form input:focus,.form select:focus{border-color:var(--green);box-shadow:0 1px 0 var(--green)}.mobile-drawer{position:fixed;z-index:30;inset:0;background:var(--green);color:#fff;padding:26px;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .32s ease}.mobile-drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid #ffffff35}.drawer-head strong{font:400 1.35rem var(--serif)}.drawer-close{border:0;background:none;color:#fff;font-size:2rem;cursor:pointer}.drawer-links{display:flex;flex-direction:column;padding:30px 0}.drawer-links a{font:400 2.2rem/1.35 var(--serif);padding:7px 0}.drawer-actions{margin-top:auto;display:grid;gap:12px}.menu{cursor:pointer}@media(min-width:901px){.mobile-drawer{display:none}}
+
+/* Focused mobile experience */
+@media(max-width:600px){
+  html{scroll-padding-top:16px}
+  body{padding-bottom:calc(54px + env(safe-area-inset-bottom))}
+  .shell{width:calc(100% - 32px)}
+  .concept-bar{padding:7px 10px;line-height:1.35;letter-spacing:.09em}
+  .top{top:30px}.nav{height:72px}.brand{gap:10px}.brand img{width:42px;height:42px}.brand strong{font-size:.96rem}.brand span{font-size:.49rem;margin-top:4px}
+  .menu{display:grid;place-items:center;width:46px;height:46px;margin-right:-10px;padding:0;font-size:1.45rem;border-radius:2px}
+  h1{font-size:clamp(2.8rem,14vw,3.55rem);line-height:.91;margin-bottom:20px}
+  h2{font-size:clamp(2.25rem,11vw,3rem);line-height:1}
+  .eyebrow{font-size:.66rem;line-height:1.5;letter-spacing:.15em}
+  .lead{font-size:1rem;line-height:1.6}
+  .hero{padding-top:102px}.hero-grid{padding:52px 0 0}.hero-actions{gap:10px;margin-top:27px}.btn{min-height:49px;padding:14px 18px}
+  .hero-art{height:290px;margin-top:34px}.arch{top:0;right:0;width:92%;height:100%;background-position:center 34%}.seal{left:0;bottom:18px;width:96px;height:96px}.seal b{font-size:1.65rem}.seal span{font-size:.48rem}
+  .hero-facts{gap:0;padding:10px 0}.fact{display:flex;flex-direction:column;justify-content:center;min-height:82px;padding:12px 9px}.fact:nth-child(even){border-left:1px solid #ffffff26}.fact:nth-child(n+3){border-top:1px solid #ffffff26}.fact b{font-size:.94rem}.fact small{font-size:.59rem;line-height:1.35}
+  .intro,.pathways,.guide,.plan,.cta,.contact{padding:68px 0}.intro-visual{height:220px;margin-top:25px}.intro-bottom{font-size:1rem}.intro-bottom .btn{width:100%;margin-top:5px}
+  .section-head{margin-bottom:30px}.section-head p{margin-top:16px;font-size:.96rem}
+  .card{min-height:0;padding:27px 22px}.card h3{margin:17px 0 12px}.card p{font-size:.93rem}.card a{padding-top:22px}
+  .guide-grid{gap:32px}.guide-copy p{font-size:1rem}.pillars{gap:10px}.pillar{grid-template-columns:48px 1fr;gap:13px;padding:18px 15px}.icon{width:48px;height:48px}.pillar h3{font-size:1rem}.pillar p{font-size:.84rem}
+  .steps{gap:0}.step{padding:29px 23px}.step .num{margin-bottom:22px}.step h3{font-size:1.2rem}.step p{font-size:.93rem}
+  .future-image{min-height:320px;background-position:center}.future-copy{padding:55px 20px}.future-copy .quote{margin:25px 0}.future-copy .btn{width:100%!important}
+  .credential-grid{gap:18px}.credentials{padding:55px 0}.credential{padding-top:17px}
+  .cta p{font-size:1rem}.cta .btn{display:flex;width:100%;max-width:330px;margin:10px auto 0}
+  .contact-grid{gap:28px}.details{margin-top:30px}.detail{padding:15px 0}.detail b{overflow-wrap:anywhere}.form{padding:25px 18px}.form h3{font-size:1.28rem}.form input,.form select{min-height:45px;font-size:16px}.form .btn{width:100%}
+  footer{padding-top:58px}.footer-grid{gap:28px 20px}.legal{font-size:.62rem;line-height:1.6;padding-bottom:25px}
+  .mobile-drawer{padding:calc(20px + env(safe-area-inset-top)) 22px calc(22px + env(safe-area-inset-bottom))}.drawer-links{padding:22px 0}.drawer-links a{font-size:1.85rem;line-height:1.25;padding:6px 0}.drawer-actions{gap:9px}.drawer-actions .btn{width:100%}
+  .mobile-actions{min-height:54px;padding-bottom:env(safe-area-inset-bottom)}.mobile-actions a{display:grid;place-items:center;min-height:54px;padding:10px;font-size:.68rem}
+}
+@media(max-width:380px){
+  .shell{width:calc(100% - 24px)}.brand span{display:none}.brand strong{font-size:.91rem}h1{font-size:2.62rem}.hero-art{height:255px}.hero-facts{padding-inline:2px}.fact b{font-size:.86rem}.future-image{min-height:285px}.footer-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
