@@ -93,5 +93,5 @@ const drawer=document.getElementById('mobileDrawer'),openBtn=document.getElement
 function setMenu(open){drawer.classList.toggle('open',open);drawer.setAttribute('aria-hidden',String(!open));openBtn.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':''}
 openBtn.addEventListener('click',()=>setMenu(true));closeBtn.addEventListener('click',()=>setMenu(false));drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 </script>
-</body>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a96d0a33d57458955f07cc3"></script></body>
 </html>
